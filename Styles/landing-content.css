@@ -1,0 +1,84 @@
+#landing-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    #transparent-div {
+        width: max-content;
+        height: max-content;
+        position: relative;
+        left: 20vw;
+        top: 6vw;
+
+        #line {
+            color: white;
+            font-size: 4vw;
+            text-shadow: 0.1vw 0.1vw 0.1vw rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    #landing-div {
+        background-color: #fff;
+        width: 92vw;
+        margin-left: -4.3vw;
+        height: 40vh;
+        position: relative;
+        top: 14vw;
+
+        #pickaxeCross {
+            position: relative;
+            float: right;
+            scale: 0.7;
+            -webkit-user-drag: none;
+            top: -10.5vw;
+            right: 8vw;
+        }
+
+        #content {
+            width: 25vw;
+            height: 9vw;
+            position: relative;
+            left: 8vw;
+            top: 4vw;
+
+            #hash {
+                position: relative;
+                left: -2.5vw;
+                top: -0.7vw;
+                transition: all ease 0.2s;
+                display: inline;
+
+                &:hover {
+                    color: orangered;
+                }
+            }
+
+            #book-meeting {
+                display: flex;
+                text-decoration: none;
+                width: fit-content;
+                position: relative;
+                color: black;
+                top: -2.5vw;
+                font-size: 1.2vw;
+
+                .arrow {
+                    position: relative;
+                    left: 0.3vw;
+                    font-size: 1.4vw;
+                    transition: translate ease 0.3s;
+                }
+
+                &:hover {
+                    color: orangered;
+                    font-style: italic;
+                }
+
+                &:hover .arrow {
+                    translate: 0.5vw 0;
+                }
+            }
+        }
+    }
+}
